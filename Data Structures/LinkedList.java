@@ -1,4 +1,4 @@
-
+// Type tells the data-type of Data which you want to store in linked list
 public class LinkedList<Type> {
     Node head;
     class Node{
@@ -84,11 +84,12 @@ public class LinkedList<Type> {
 
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
-
+        LinkedList<String> list = new LinkedList<>();
+        
         list.addFirst(1);
-        list.addFirst(2);
+        list.addFirst("Manish");
         list.addFirst(21);
-        list.addFirst(22);
+        list.addFirst("Kumar");
         list.addFirst(23);
         list.delLast();
         list.delFirst();
